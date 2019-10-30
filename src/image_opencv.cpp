@@ -3,11 +3,17 @@
 #include "stdio.h"
 #include "stdlib.h"
 #include "opencv2/opencv.hpp"
+#include "opencv2/core.hpp"
+#include "opencv2/core/types_c.h"
+#include "opencv2/core/core_c.h"
+#include "opencv2/highgui/highgui_c.h"
+#include "opencv2/videoio/legacy/constants_c.h"
 #include "image.h"
 
 using namespace cv;
 
 extern "C" {
+
 
 IplImage *image_to_ipl(image im)
 {
